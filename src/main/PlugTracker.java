@@ -19,6 +19,8 @@ public class PlugTracker extends JavaPlugin {
 	public void onEnable()
 	{
 		this.getCommand("PlugTracker").setExecutor(new PlugCommand());
+		PluginDescriptionFile pdffile = this.getDescription();
+		this.logger.info(pdffile.getName() + " is now enabled.");
 	}
 
 }
