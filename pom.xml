@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>PlugTracker</groupId>
+  <artifactId>PlugTracker</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>PlugTracker</name>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.0</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <url>computerxpds.com</url>
+  <description>Plugin tracker for bukkit to spit ALL plugin versions and bukkit version into a text file for consumption and comparison when updating and tracking plugins. Its something useful.. believe me..</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.bukkit</groupId>
+  		<artifactId>bukkit</artifactId>
+  		<version>1.7.2-R0.2</version>
+  	</dependency>
+  </dependencies>
+  <repositories>
+      <repository>
+      <id>bukkit-repo</id>
+      <url>http://repo.bukkit.org/content/groups/public/</url>
+    </repository>
+    </repositories>
+</project>
